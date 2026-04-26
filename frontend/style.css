@@ -1,0 +1,86 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { background-color: #f4f4f9; color: #333; }
+
+/* Navigation */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+header nav a:hover { color: #f39c12; }
+
+/* Main Content area */
+main { padding: 2rem; max-width: 1200px; margin: auto; }
+h2 { margin-bottom: 1.5rem; text-align: center; }
+
+/* Product Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-5px); }
+.card h3 { margin: 10px 0; font-size: 1.2rem; }
+.card p { color: #666; margin-bottom: 10px; }
+.card strong { color: #2c3e50; font-size: 1.3rem; }
+
+/* Buttons */
+button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover { background: #219150; }
+
+/* Forms (For our login page next!) */
+.form-container {
+    background: white;
+    padding: 2rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
